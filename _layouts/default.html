@@ -1,8 +1,11 @@
 <!DOCTYPE html>
   {% include head.html %}
   <body>
-    <main class="content">
-      {{ content }}
-    </main>
+    <div class="main">
+      <div class="page-content">
+        {% include nav.html %}
+        {{ content }}
+      </div>
+    </div>
   </body>
 </html>
