@@ -7,5 +7,5 @@ layout: default
 
 *{{ post.date | date: '%B %d, %Y' }}*
 
-{{ post.content | strip_html | truncatewords: 70 }} [Read more]({{ post.url }})
+{{ post.content | strip_html | truncatewords: 30 }} [Read more]({{ post.url }})
 {% endfor %}

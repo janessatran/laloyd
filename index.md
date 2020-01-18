@@ -3,21 +3,14 @@ title: Home
 layout: default
 ---
 # Welcome
-This is some text. It is just an example.
+A no-fuss, functional (yet modern) looking theme for jekyll sites. It includes a few accessibility features including:
+  + Hidden skip link to main content
+  + Focus states
+  + High contrast colors
+  + Accessible syntax highlighting
+  + Structural, semantic HTML
 
-[This](https://duckduckgo.com) is a link.
-
-```ruby
-
-puts "this is a Ruby code block"
-
-```
-
-These are bullet points:
-- first note
-- second note
-- third note
-
-
-"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+## Inspiration
+This theme was inspired by my cat Lloyd, otherwise known as "La-Loyd".
+![Lloyd](https://pbs.twimg.com/media/EF9TaZdXoAEGIL7?format=jpg&name=4096x4096)
 

@@ -6,17 +6,14 @@
 // The colors selected below are accessible according to WCAG guidelines.
 // If you wish to change the colors but want to ensure their accessibility,
 // you can check out: http://colorsafe.co/
-$header_color: #3e3e3e;
+$main_title_color: #3e3e3e;
+$header_color: #b50000;
 $link_color: #b50000;
 $link_hover_color: #16405b;
+$font_family: system-ui, Helvetica, Arial, sans-serif;;
 
 body {
-  font-family: system-ui, Helvetica, Arial, sans-serif;
-}
-
-h1 {
-  color: $header_color;
-  size: 1.5rem;
+  font-family: $font-family;
 }
 
 a {
@@ -27,12 +24,47 @@ a:hover, a:focus {
   color: $link_hover_color;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $header_color;
+  padding-top: 10px;
+}
+
+h1 {
+  size: 1.7rem;
+}
+
+h2 {
+  size: 1.3rem;
+}
+
+h3 {
+  size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 150%;
+  color: #444;
+  margin: 1.25rem 0;
+}
+
+.site-title , .post-title {
+  font-size: 2.5rem;
+  color: $main_title_color;
+  margin: 0;
+}
+
 .page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  width: 50%;
+  width: 80%;
+  max-width: 600px;
   // border: 1px solid;
 }
 
@@ -62,4 +94,14 @@ nav > ul li {
 }
 .skip-link:focus {
   top: 0;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+code {
+  font-size: 1rem;
 }
