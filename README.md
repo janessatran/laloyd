@@ -1,11 +1,8 @@
 # laloyd
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+This is a functional, colorful, accessible [Jekyll](https://jekyllrb.com/) theme inspired by my cat Lloyd, otherwise known as "La-Loyd". It's fully responsive and all pages are written in markdown for ease of writing.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+![Live Preview of laloyd Theme](http://g.recordit.co/6dYP4Y8YuU.gif)
 
 ## Installation
 
@@ -31,20 +28,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+## Customizing layouts and colors
+If you'd like to customize this theme, you can edit colors in `/assets/stylesheets/main.scss` and layouts in `/_layouts`. All pages are set up to use the default layout.
+
+## Customizing navigation
+Navigation pages are set up in `_config.yml` and are created with markdown pages in the home directory `laloyd/`. This theme is set up with the following navigation pages:
+- Home - `index.md`
+- About - `about.md`
+- Writing - `writing.md`
+
+To add/remove navigation pages, add a new markdown file in the home directory and link to it in `_config.yml`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `laloyd.gemspec` accordingly.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[janessatran]/laloyd. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
