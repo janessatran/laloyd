@@ -2,6 +2,17 @@
 # Main styles
 ---
 
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  padding: 1em;
+  border: 1px solid;
+}
+
 h1 {
   color: red;
+  text-align: center;
 }
