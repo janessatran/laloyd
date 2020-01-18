@@ -3,7 +3,7 @@ title: "Example Post"
 layout: post
 ---
 
-# Water... Earth... Fire... Air...
+# 💧Water... 🌍 Earth... 🔥 Fire... 💨 Air...
 
 My grandmother used to tell me stories about the old days, a time of peace when the Avatar kept balance between the Water Tribes, Earth Kingdom, Fire Nation, and Air Nomads. But that all changed when the Fire Nation attacked.
 
@@ -13,12 +13,7 @@ A hundred years have passed and the Fire Nation is nearing victory in the war. T
 
 Some people believe that the Avatar was never reborn into the Air Nomads and that the cycle is broken, but I haven't lost hope. I still believe that somehow the Avatar will return to save the world.
 
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-
-
-## Emphasis
+# Emphasis
 
 **This is bold text**
 
@@ -31,7 +26,7 @@ _This is italic text_
 ~~Strikethrough~~
 
 
-## Blockquotes
+# Blockquotes
 
 
 > Blockquotes can also be nested...
@@ -39,9 +34,9 @@ _This is italic text_
 > > > ...or with spaces between arrows.
 
 
-## Lists
+# Lists
 
-Unordered
+## Unordered
 
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
@@ -51,7 +46,7 @@ Unordered
     - Nulla volutpat aliquam velit
 + Very easy!
 
-Ordered
+## Ordered
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
@@ -67,7 +62,7 @@ Start numbering with offset:
 1. bar
 
 
-## Code
+# Code
 
 Inline `code`
 
@@ -112,7 +107,7 @@ for i in (0...items.length)
 end
 ```
 
-## Tables
+# Tables
 
 | Option | Description |
 | ------ | ----------- |
@@ -129,12 +124,7 @@ Right aligned columns
 | ext    | extension to be used for dest files. |
 
 
-## Links
+# Links
 
 [link text](http://dev.nodeca.com)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-Like links, Images also have a footnote style syntax

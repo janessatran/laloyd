@@ -7,10 +7,11 @@
 // If you wish to change the colors but want to ensure their accessibility,
 // you can check out: http://colorsafe.co/
 $main_title_color: #3e3e3e;
-$header_color: #b50000;
-$link_color: #b50000;
-$link_hover_color: #16405b;
-$font_family: system-ui, Helvetica, Arial, sans-serif;;
+$main_header_color: #ff0000;
+$link_color: #3e3e3e;
+$link_background_color: #ffe0e0;
+$link_hover_color: #ff0000;
+$font_family: system-ui, Helvetica, Arial, sans-serif;
 
 body {
   font-family: $font-family;
@@ -18,14 +19,22 @@ body {
 
 a {
   color: $link_color;
+  background: linear-gradient(to bottom, transparent 0%, transparent 60%, $link_background_color 60%, $link_background_color 100%);;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
   color: $link_hover_color;
+  background: linear-gradient(to bottom, transparent 0%, transparent 0%, $link_background_color 0%, $link_background_color 100%);;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $header_color;
+h1 {
+  color: $main_header_color;
+  padding-top: 10px;
+}
+
+h2, h3, h4, h5, h6 {
+  color: $main_title_color;
   padding-top: 10px;
 }
 
@@ -43,6 +52,15 @@ h3 {
 
 img {
   max-width: 100%;
+}
+
+figcaption {
+  margin-top: -3px;
+  background: #dddddd;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  text-align: center;
 }
 
 p, li {
@@ -69,7 +87,7 @@ p, li {
 }
 
 #main-content, #nav-container {
-  margin: 2%;
+  // margin: 2%;
 }
 
 #nav-container  > h1 {
@@ -83,7 +101,9 @@ nav > ul {
 }
 
 nav > ul li {
-  padding-right: 2vw;
+  font-size: 1.2rem;
+  padding-right: 3vw;
+  font-weight: 300;
 }
 
 // hide skip link until it's in focus
@@ -103,5 +123,5 @@ th, td {
 }
 
 code {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
