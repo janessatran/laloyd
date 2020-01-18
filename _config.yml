@@ -11,6 +11,13 @@ nav-links:
   - name: Writing
     url: /writing
 
+# Conversion
+markdown            : kramdown
+highlighter         : rouge
+lsi                 : false
+excerpt_separator   : "\n\n"
+incremental         : false
+
 defaults:
     scope:
       path: ""
@@ -23,5 +30,32 @@ defaults:
       is_post: true
 permalink: /:title
 
+# Where things are
+source              : .
+destination         : ./_site
+collections_dir     : .
+plugins_dir         : _plugins
+layouts_dir         : _layouts
+includes_dir        : _includes
 sass:
-    sass_dir: _sass
+  sass_dir: _sass
+  style: compressed
+collections:
+  posts:
+    output          : true
+
+
+# Front matter defaults
+defaults:
+  - # apply default layout to all files in project
+  scope:
+    path: "" # an empty string here means all files in the project
+  values:
+    layout: "default"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      is_post: true
+

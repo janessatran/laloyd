@@ -2,26 +2,42 @@
 # Main styles
 ---
 
+// You can specify colors below for your headers, links, and hover.
+// The colors selected below are accessible according to WCAG guidelines.
+// If you wish to change the colors but want to ensure their accessibility,
+// you can check out: http://colorsafe.co/
+$header_color: #3e3e3e;
+$link_color: #b50000;
+$link_hover_color: #16405b;
+
 body {
   font-family: system-ui, Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  color: $header_color;
+  size: 1.5rem;
+}
+
+a {
+  color: $link_color;
+}
+
+a:hover, a:focus {
+  color: $link_hover_color;
+}
+
 .page {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   margin: auto;
   width: 50%;
   // border: 1px solid;
 }
 
 #main-content, #nav-container {
-  margin: 5%;
-}
-
-h1 {
-  font-size: 1em;
-  color: red;
+  margin: 2%;
 }
 
 #nav-container  > h1 {
@@ -32,17 +48,17 @@ nav > ul {
   display: flex;
   list-style: none;
   padding-inline-start: 0;
-  // margin-bottom: 10%;
 }
 
 nav > ul li {
   padding-right: 2vw;
 }
 
+// hide skip link until it's in focus
 .skip-link {
+  background: #fff;
   position: absolute;
   top: -3em;
-  background: #fff;
 }
 .skip-link:focus {
   top: 0;
