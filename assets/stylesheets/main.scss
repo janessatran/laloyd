@@ -6,7 +6,7 @@ body {
   font-family: system-ui, Helvetica, Arial, sans-serif;
 }
 
-.main {
+.page {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -15,8 +15,8 @@ body {
   // border: 1px solid;
 }
 
-.page-content {
-  margin: 10%;
+#main-content, #nav-container {
+  margin: 5%;
 }
 
 h1 {
@@ -32,9 +32,18 @@ nav > ul {
   display: flex;
   list-style: none;
   padding-inline-start: 0;
-  margin-bottom: 10%;
+  // margin-bottom: 10%;
 }
 
 nav > ul li {
   padding-right: 2vw;
+}
+
+.skip-link {
+  position: absolute;
+  top: -3em;
+  background: #fff;
+}
+.skip-link:focus {
+  top: 0;
 }

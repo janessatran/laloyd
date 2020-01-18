@@ -1,9 +1,10 @@
 <!DOCTYPE html>
   {% include head.html %}
   <body>
-    <div class="main">
-      <div class="page-content">
-        {% include nav.html %}
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="page">
+      {% include nav.html %}
+      <div id="main-content">
         {{ content }}
       </div>
     </div>
