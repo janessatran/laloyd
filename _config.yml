@@ -1,0 +1,26 @@
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.comtitle: LaLoyd Theme
+description: A description of your site can go here!
+nav-links:
+  - name: Home
+    url: /
+  - name: About
+    url: /about
+  - name: Writing
+    url: /writing
+
+defaults:
+    scope:
+      path: ""
+    values:
+      layout: "default"
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
+permalink: /:title
+
+sass:
+    sass_dir: _sass
