@@ -3,7 +3,7 @@
 This is a functional, colorful, accessible [Jekyll](https://jekyllrb.com/) theme inspired by my cat Lloyd, otherwise known as "La-Loyd". It's fully responsive and all pages are written in markdown for ease of writing.
 
 ## Accessibility Features
-One of my motivations in making this theme was to learn about and create accessible front-ends. Some of the accessible features this theme includes so far are:
+One of my motivations in making this theme was to learn how to create accessible websites. Some of the accessible features this theme includes so far are:
 - Hidden "skip link" to jump to main content.
 - Focus states for clearer navigation.
 - High contrast colors.
