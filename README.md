@@ -17,7 +17,7 @@ If you have any tips / suggesstions for new accessibility features, please [open
 ## Installation
 
 ### Github Pages
-As of January 19th, 2020 (when I'm writing this), [GitHub Pages only supports a few themes.](https://pages.github.com/themes/). To use this theme, you will need to ensure the following:
+As of January 19th, 2020 (when I'm writing this), [GitHub Pages only supports a few themes.](https://pages.github.com/themes/). To use this theme, you will need to install it as a `remote_theme`. To do this, update the following:
 
 
 Add these lines to your `Gemfile`:
