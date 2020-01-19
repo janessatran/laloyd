@@ -12,7 +12,7 @@ One of my motivations in making this theme was to learn how to create accessible
 
 If you have any tips / suggesstions for new accessibility features, please [open up an issue](https://github.com/janessatran/laloyd/issues).
 
-![Live Preview of laloyd Theme](http://g.recordit.co/6dYP4Y8YuU.gif)
+![Live Preview of laloyd Theme](http://g.recordit.co/AO01sfZnP0.gif)
 
 ## Installation
 
@@ -61,7 +61,7 @@ If you encounter issues with this theme, you can run `bundle exec jekyll build -
 ## Customizing layouts and colors
 If you'd like to customize this theme, you can copy the contents of `_layouts`, `_includes`, and `_assets` into your project repository and overwrite the files. First, create the folder you want to override:
 
-    $ mkdir ./_includes 
+    $ mkdir ./_includes
 
 Then, copy the contents from the gem into your folder:
 
