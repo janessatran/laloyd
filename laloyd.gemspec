@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "laloyd"
-  spec.version       = "0.1.2"
+  spec.version       = "0.1.3"
   spec.authors       = ["Janessa Tran"]
   spec.email         = ["tranjanessa@gmail.com"]
 
-  spec.summary       = "A modern, yet playful jekyll theme"
+  spec.summary       = "A simple, colorful, and accessible jekyll theme"
   spec.homepage      = "https://github.com/janessatran/laloyd.git"
   spec.license       = "MIT"
 
