@@ -15,41 +15,90 @@ If you have any tips / suggesstions for new accessibility features, please [open
 ![Live Preview of laloyd Theme](http://g.recordit.co/6dYP4Y8YuU.gif)
 
 ## Installation
-Add this line to your Jekyll site's `Gemfile`:
+
+### Github Pages
+As of January 19th, 2020 (when I'm writing this), [GitHub Pages only supports a few themes.](https://pages.github.com/themes/). To use this theme, you will need to ensure the following:
+
+
+Add these lines to your `Gemfile`:
 
 ```ruby
-gem "laloyd"
+gem "jekyll", "~> 3.7.3"
+gem "laloyd", "~> 0.1.3"
+
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-remote-theme"
+  gem "jekyll-include-cache"
+end
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+And add these lines to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: laloyd
+# Build settings
+remote_theme: "janessatran/laloyd"
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
 ```
 
 And then execute:
 
-    $ bundle
+    $ bundle update
 
 Or install it yourself as:
 
     $ gem install laloyd
 
+
 ### Troubleshooting
-If you are using this theme and hosting your site on Github Pages, you may run into the issue of the [styles loading locally but not loading on Github Pages](https://stackoverflow.com/questions/42450554/jekyll-site-works-locally-but-not-on-github-pages). If this is the case, you can copy the assets (under `_site/assets/stylesheets`) into a local `assets` folder so that Github Pages can read them. You may also need to copy the `_layouts` directory to your repository as well.
+If you encounter issues with this theme, you can run `bundle exec jekyll build --trace --verbose` to see what the specific issues are.
 
 ## Usage
 
 ## Customizing layouts and colors
-If you'd like to customize this theme, you can edit colors in `/assets/stylesheets/main.scss` and layouts in `/_layouts`. All pages are set up to use the default layout.
+If you'd like to customize this theme, you can copy the contents of `_layouts`, `_includes`, and `_assets` into your project repository and overwrite the files. First, create the folder you want to override:
+
+    $ mkdir ./_includes 
+
+Then, copy the contents from the gem into your folder:
+
+    $ cp $(bundle show laloyd)/_includes/* ./_includes
 
 ## Customizing navigation
 Navigation pages are set up in `_config.yml` and are created with markdown pages in the home directory `laloyd/`. This theme is set up with the following navigation pages:
 - Home - `index.md`
 - About - `about.md`
-- Writing - `writing.md`
 
-To add/remove navigation pages, add a new markdown file in the home directory and link to it in `_config.yml`.
+## Setting up an index of writing/blog posts
+To create a page listing all your files in `_posts`, create a new markdown file in your root project directory with the layout `post_index`:
+
+    $ mkdir ./writing.markdown
+
+Update `writing.markdown`:
+
+```markdown
+---
+title: Writing
+layout: post_index
+---
+
+```
+
+Then, link the new page in `_config.yml`.
+
+```yaml
+
+nav-links:
+  - name: Home
+    url: /
+  - name: About
+    url: /about
+  - name: Writing # index of blog posts
+    url: /writing
+```
 
 ## Contributing
 
