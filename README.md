@@ -15,7 +15,6 @@ If you have any tips / suggesstions for new accessibility features, please [open
 ![Live Preview of laloyd Theme](http://g.recordit.co/6dYP4Y8YuU.gif)
 
 ## Installation
-
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
@@ -35,6 +34,9 @@ And then execute:
 Or install it yourself as:
 
     $ gem install laloyd
+
+### Troubleshooting
+If you are using this theme and hosting your site on Github Pages, you may run into the issue of the [styles loading locally but not loading on Github Pages](https://stackoverflow.com/questions/42450554/jekyll-site-works-locally-but-not-on-github-pages). If this is the case, you can copy the assets (under `_site/assets/stylesheets`) into a local `assets` folder so that Github Pages can read them. You may also need to copy the `_layouts` directory to your repository as well.
 
 ## Usage
 
